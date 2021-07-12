@@ -222,8 +222,8 @@ public class SubsamplingScaleImageView extends View {
     private int maxTouchCount;
 
     // Fling detector
-    private GestureDetector detector;
-    private GestureDetector singleDetector;
+    protected GestureDetector detector;
+    protected GestureDetector singleDetector;
 
     // Tile and image decoding
     private ImageRegionDecoder decoder;
@@ -244,7 +244,7 @@ public class SubsamplingScaleImageView extends View {
     private PointF quickScaleVStart;
 
     // Scale and center animation tracking
-    private Anim anim;
+    protected Anim anim;
 
     // Whether a ready notification has been sent to subclasses
     private boolean readySent;
