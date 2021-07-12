@@ -1410,7 +1410,7 @@ public class SubsamplingScaleImageView extends View {
      * @param center Whether the image should be centered in the dimension it's too small to fill. While animating this can be false to avoid changes in direction as bounds are reached.
      * @param sat The scale we want and the translation we're aiming for. The values are adjusted to be valid.
      */
-    private void fitToBounds(boolean center, ScaleAndTranslate sat) {
+    protected void fitToBounds(boolean center, ScaleAndTranslate sat) {
         if (panLimit == PAN_LIMIT_OUTSIDE && isReady()) {
             center = false;
         }
