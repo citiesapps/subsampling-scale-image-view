@@ -165,7 +165,7 @@ public class SubsamplingScaleImageView extends View {
     private int minimumTileDpi = -1;
 
     // Pan limiting style
-    private int panLimit = PAN_LIMIT_INSIDE;
+    protected int panLimit = PAN_LIMIT_INSIDE;
 
     // Minimum scale type
     private int minimumScaleType = SCALE_TYPE_CENTER_INSIDE;
@@ -1920,6 +1920,18 @@ public class SubsamplingScaleImageView extends View {
         }
         private float scale;
         private final PointF vTranslate;
+
+        public float getScale() {
+            return scale;
+        }
+
+        public void setScale(float scale) {
+            this.scale = scale;
+        }
+
+        public PointF getvTranslate() {
+            return vTranslate;
+        }
     }
 
     /**
