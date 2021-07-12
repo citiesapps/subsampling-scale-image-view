@@ -1913,7 +1913,7 @@ public class SubsamplingScaleImageView extends View {
 
     }
 
-    private static class ScaleAndTranslate {
+    public static class ScaleAndTranslate {
         private ScaleAndTranslate(float scale, PointF vTranslate) {
             this.scale = scale;
             this.vTranslate = vTranslate;
