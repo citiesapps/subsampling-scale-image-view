@@ -1979,7 +1979,7 @@ public class SubsamplingScaleImageView extends View {
      * Get source width taking rotation into account.
      */
     @SuppressWarnings("SuspiciousNameCombination")
-    private int sWidth() {
+    public int sWidth() {
         int rotation = getRequiredRotation();
         if (rotation == 90 || rotation == 270) {
             return sHeight;
@@ -1992,7 +1992,7 @@ public class SubsamplingScaleImageView extends View {
      * Get source height taking rotation into account.
      */
     @SuppressWarnings("SuspiciousNameCombination")
-    private int sHeight() {
+    public int sHeight() {
         int rotation = getRequiredRotation();
         if (rotation == 90 || rotation == 270) {
             return sWidth;
